@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example of snowflakes</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="../lib/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="../src/letItSnow.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function launchSnowflakes() {
+        $('.snowspawner').letItSnow({
+          fall_time:5000
+        });
+      })
+    </script>
+    <style media="screen">
+      html{
+        background-color: #b1b1b1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="snowspawner"></div>
+    <button type="button" name="button" onclick="$('html').css('background-color','#fff')">Content White</button>
+    <button type="button" name="button" onclick="$('html').css('background-color','#000')">Content Black</button>
+    <button type="button" name="button" onclick="$('html').css('background-color','')">Content Initial</button>
+  </body>
+</html>
