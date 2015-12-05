@@ -54,4 +54,4 @@ Flakes append into given element. It's good to choose some `#snowspawner` instea
 > - (number) fall_time = time in milliseconds of falling for every flake
 
 ####Background performance
-Snowflakes stop being populated when onBlur event fires and start spawning after `onFocus` event. This is needed to free resources while user is not using the website.
+Snowflakes stop being populated when `onBlur` event fires and start spawning after `onFocus` event. This is needed to free resources while user is not using the website.
