@@ -1,16 +1,32 @@
 # letItSnow.js
-Snowing jQuery extension makes your website snowing :)
+letItSnow.js is a jQuery extension that makes your website snowing :)
+Go to `example/index.html` for more.
+
+####Required libraries
+- jQuery 2.x
+- jQuery-ui 1.11+ with `Effects Core` included
 
 ####Usage
 #####Simple
 ```
-$('#snowspawner').letItSonw();
+$(function() {
+  $('#snowspawner').letItSnow({
+    fall_time:5000
+  });
+})
 ```
 #####With options
 ```
 $('#snowspawner').letItSonw({
   fall_time:5000
 });
+```
+#####About #snowspawner
+Flakes append into given element. It's good to choose some `#snowspawner` instead of `body` for easier manipulation and debugging.
+```
+<body>
+  <div id="snowspawner"></div>
+  ...
 ```
 #####Default options (those can be set as well)
 ```
@@ -26,7 +42,7 @@ $('#snowspawner').letItSonw({
   fall_time: 10000
 }
 ```
-#####What they mean
+#####What do they mean?
 > - (string) color = color of snow
 > - (number) size_min = min size of snowflake
 > - (number) size_max = max size of snowflake
