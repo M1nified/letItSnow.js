@@ -3,6 +3,6 @@
   "description": "Snowing jQuery extension",
   "homepage": "http://prowebject.com",
   "license": "MIT",
-  "name": "jquery.letItSnow",
+  "name": "letItSnow.js",
   "version": "0.1"
 }
